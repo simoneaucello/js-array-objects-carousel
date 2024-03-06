@@ -36,11 +36,13 @@ div.my-next{
 }
 
 div.my-previous{
-    left: 1rem;
+    left: 22rem;
+    top: 49rem;
 }
 
 div.my-next{
-    right: 1rem;
+    right: 22rem;
+    top: 49rem;
 }
 
 div.my-previous > span::after{
@@ -101,6 +103,7 @@ div#my-carousel .my-thumbnails .my-thumbnail{
 div#my-carousel .my-thumbnails .my-thumbnail img{
     height: 100%;
     width: 100%;
+    object-fit: cover
 }
 
 div#my-carousel .my-thumbnails .my-thumbnail.active{

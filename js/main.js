@@ -1,5 +1,7 @@
 const mineCarousel = document.querySelector('.my-carousel-images');
 const mineThumbnails = document.querySelector('.my-thumbnails');
+const prev = document.querySelector('.my-previous');
+const next = document.querySelector('.my-next');
 
 
 
@@ -64,3 +66,34 @@ images.forEach(currentImage => {
 
 const myThumbnails = document.querySelectorAll('.my-thumbnail');
 myThumbnails[0].classList.add('active');
+
+
+// next button 
+next.addEventListener('click', function(){
+    myImages[counter].classList.toggle('active');
+    myThumbnails[counter].classList.toggle('active');
+
+    counter++;
+
+    if (counter === images.length) {
+        counter = 0;
+    }
+    
+    myImages[counter].classList.toggle('active');
+    myThumbnails[counter].classList.toggle('active');
+});
+
+
+//prev button
+prev.addEventListener('click', function() {
+    myImages[counter].classList.toggle('active');
+    myThumbnails[counter].classList.toggle('active');
+    
+    counter--;
+    if (counter < 0) {
+        counter = images.length - 1;
+    }
+    myImages[counter].classList.toggle('active');
+    myThumbnails[counter].classList.toggle('active');
+
+})
