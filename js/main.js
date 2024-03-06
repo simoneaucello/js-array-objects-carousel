@@ -2,9 +2,6 @@ const mineCarousel = document.querySelector('.my-carousel-images');
 const mineThumbnails = document.querySelector('.my-thumbnails');
 const prev = document.querySelector('.my-previous');
 const next = document.querySelector('.my-next');
-
-
-
 let counter = 0;
 
 
