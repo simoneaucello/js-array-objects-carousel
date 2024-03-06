@@ -1,4 +1,4 @@
-Carosello Autoplay
+Carosello Array di Oggetti
 ===
 Dato un array di oggetti letterali con:
  - url dell’immagine
